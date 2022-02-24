@@ -4,7 +4,7 @@ https://www.thetechplatform.com/post/how-to-use-database-sharding-and-scale-an-a
 docker run -p 3310:3306 --name=mysql1 -e MYSQL_ROOT_PASSWORD=pw -d mysql:5.6
 docker run -p 3311:3306 --name=mysql2 -e MYSQL_ROOT_PASSWORD=pw -d mysql:5.6
 
-## °á°úÈ®ÀÎ
+## ï¿½ï¿½ï¿½È®ï¿½ï¿½
 docker container exec -it mysql1 /bin/sh
 mysql -ppw
 select * from post.Post;
@@ -12,3 +12,6 @@ select * from post.Post;
 docker container exec -it mysql2 /bin/sh
 mysql -ppw
 select * from post.Post;
+
+## ì°¸ê³ ìë£Œ
+https://codeopinion.com/snapshots-in-event-sourcing-for-rehydrating-aggregates/
